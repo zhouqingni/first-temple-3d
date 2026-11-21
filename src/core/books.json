@@ -1,0 +1,332 @@
+{
+ "创": {
+  "code": "GEN",
+  "name": "创世记",
+  "file": "02-GENcmn-cu89s.usfm"
+ },
+ "出": {
+  "code": "EXO",
+  "name": "出埃及记",
+  "file": "03-EXOcmn-cu89s.usfm"
+ },
+ "利": {
+  "code": "LEV",
+  "name": "利未记",
+  "file": "04-LEVcmn-cu89s.usfm"
+ },
+ "民": {
+  "code": "NUM",
+  "name": "民数记",
+  "file": "05-NUMcmn-cu89s.usfm"
+ },
+ "申": {
+  "code": "DEU",
+  "name": "申命记",
+  "file": "06-DEUcmn-cu89s.usfm"
+ },
+ "书": {
+  "code": "JOS",
+  "name": "约书亚记",
+  "file": "07-JOScmn-cu89s.usfm"
+ },
+ "士": {
+  "code": "JDG",
+  "name": "士师记",
+  "file": "08-JDGcmn-cu89s.usfm"
+ },
+ "得": {
+  "code": "RUT",
+  "name": "路得记",
+  "file": "09-RUTcmn-cu89s.usfm"
+ },
+ "撒上": {
+  "code": "1SA",
+  "name": "撒母耳记上",
+  "file": "10-1SAcmn-cu89s.usfm"
+ },
+ "撒下": {
+  "code": "2SA",
+  "name": "撒母耳记下",
+  "file": "11-2SAcmn-cu89s.usfm"
+ },
+ "王上": {
+  "code": "1KI",
+  "name": "列王纪上",
+  "file": "12-1KIcmn-cu89s.usfm"
+ },
+ "王下": {
+  "code": "2KI",
+  "name": "列王纪下",
+  "file": "13-2KIcmn-cu89s.usfm"
+ },
+ "代上": {
+  "code": "1CH",
+  "name": "历代志上",
+  "file": "14-1CHcmn-cu89s.usfm"
+ },
+ "代下": {
+  "code": "2CH",
+  "name": "历代志下",
+  "file": "15-2CHcmn-cu89s.usfm"
+ },
+ "拉": {
+  "code": "EZR",
+  "name": "以斯拉记",
+  "file": "16-EZRcmn-cu89s.usfm"
+ },
+ "尼": {
+  "code": "NEH",
+  "name": "尼希米记",
+  "file": "17-NEHcmn-cu89s.usfm"
+ },
+ "斯": {
+  "code": "EST",
+  "name": "以斯帖记",
+  "file": "18-ESTcmn-cu89s.usfm"
+ },
+ "伯": {
+  "code": "JOB",
+  "name": "约伯记",
+  "file": "19-JOBcmn-cu89s.usfm"
+ },
+ "诗": {
+  "code": "PSA",
+  "name": "诗篇",
+  "file": "20-PSAcmn-cu89s.usfm"
+ },
+ "箴": {
+  "code": "PRO",
+  "name": "箴言",
+  "file": "21-PROcmn-cu89s.usfm"
+ },
+ "传": {
+  "code": "ECC",
+  "name": "传道书",
+  "file": "22-ECCcmn-cu89s.usfm"
+ },
+ "歌": {
+  "code": "SNG",
+  "name": "雅歌",
+  "file": "23-SNGcmn-cu89s.usfm"
+ },
+ "赛": {
+  "code": "ISA",
+  "name": "以赛亚书",
+  "file": "24-ISAcmn-cu89s.usfm"
+ },
+ "耶": {
+  "code": "JER",
+  "name": "耶利米书",
+  "file": "25-JERcmn-cu89s.usfm"
+ },
+ "哀": {
+  "code": "LAM",
+  "name": "耶利米哀歌",
+  "file": "26-LAMcmn-cu89s.usfm"
+ },
+ "结": {
+  "code": "EZK",
+  "name": "以西结书",
+  "file": "27-EZKcmn-cu89s.usfm"
+ },
+ "但": {
+  "code": "DAN",
+  "name": "但以理书",
+  "file": "28-DANcmn-cu89s.usfm"
+ },
+ "何": {
+  "code": "HOS",
+  "name": "何西阿书",
+  "file": "29-HOScmn-cu89s.usfm"
+ },
+ "珥": {
+  "code": "JOL",
+  "name": "约珥书",
+  "file": "30-JOLcmn-cu89s.usfm"
+ },
+ "摩": {
+  "code": "AMO",
+  "name": "阿摩司书",
+  "file": "31-AMOcmn-cu89s.usfm"
+ },
+ "俄": {
+  "code": "OBA",
+  "name": "俄巴底亚书",
+  "file": "32-OBAcmn-cu89s.usfm"
+ },
+ "拿": {
+  "code": "JON",
+  "name": "约拿书",
+  "file": "33-JONcmn-cu89s.usfm"
+ },
+ "弥": {
+  "code": "MIC",
+  "name": "弥迦书",
+  "file": "34-MICcmn-cu89s.usfm"
+ },
+ "鸿": {
+  "code": "NAM",
+  "name": "那鸿书",
+  "file": "35-NAMcmn-cu89s.usfm"
+ },
+ "哈": {
+  "code": "HAB",
+  "name": "哈巴谷书",
+  "file": "36-HABcmn-cu89s.usfm"
+ },
+ "番": {
+  "code": "ZEP",
+  "name": "西番雅书",
+  "file": "37-ZEPcmn-cu89s.usfm"
+ },
+ "该": {
+  "code": "HAG",
+  "name": "哈该书",
+  "file": "38-HAGcmn-cu89s.usfm"
+ },
+ "亚": {
+  "code": "ZEC",
+  "name": "撒迦利亚书",
+  "file": "39-ZECcmn-cu89s.usfm"
+ },
+ "玛": {
+  "code": "MAL",
+  "name": "玛拉基书",
+  "file": "40-MALcmn-cu89s.usfm"
+ },
+ "太": {
+  "code": "MAT",
+  "name": "马太福音",
+  "file": "70-MATcmn-cu89s.usfm"
+ },
+ "可": {
+  "code": "MRK",
+  "name": "马可福音",
+  "file": "71-MRKcmn-cu89s.usfm"
+ },
+ "路": {
+  "code": "LUK",
+  "name": "路加福音",
+  "file": "72-LUKcmn-cu89s.usfm"
+ },
+ "约": {
+  "code": "JHN",
+  "name": "约翰福音",
+  "file": "73-JHNcmn-cu89s.usfm"
+ },
+ "徒": {
+  "code": "ACT",
+  "name": "使徒行传",
+  "file": "74-ACTcmn-cu89s.usfm"
+ },
+ "罗": {
+  "code": "ROM",
+  "name": "罗马书",
+  "file": "75-ROMcmn-cu89s.usfm"
+ },
+ "林前": {
+  "code": "1CO",
+  "name": "哥林多前书",
+  "file": "76-1COcmn-cu89s.usfm"
+ },
+ "林后": {
+  "code": "2CO",
+  "name": "哥林多后书",
+  "file": "77-2COcmn-cu89s.usfm"
+ },
+ "加": {
+  "code": "GAL",
+  "name": "加拉太书",
+  "file": "78-GALcmn-cu89s.usfm"
+ },
+ "弗": {
+  "code": "EPH",
+  "name": "以弗所书",
+  "file": "79-EPHcmn-cu89s.usfm"
+ },
+ "腓": {
+  "code": "PHP",
+  "name": "腓立比书",
+  "file": "80-PHPcmn-cu89s.usfm"
+ },
+ "西": {
+  "code": "COL",
+  "name": "歌罗西书",
+  "file": "81-COLcmn-cu89s.usfm"
+ },
+ "帖前": {
+  "code": "1TH",
+  "name": "帖撒罗尼迦前书",
+  "file": "82-1THcmn-cu89s.usfm"
+ },
+ "帖后": {
+  "code": "2TH",
+  "name": "帖撒罗尼迦后书",
+  "file": "83-2THcmn-cu89s.usfm"
+ },
+ "提前": {
+  "code": "1TI",
+  "name": "提摩太前书",
+  "file": "84-1TIcmn-cu89s.usfm"
+ },
+ "提后": {
+  "code": "2TI",
+  "name": "提摩太后书",
+  "file": "85-2TIcmn-cu89s.usfm"
+ },
+ "多": {
+  "code": "TIT",
+  "name": "提多书",
+  "file": "86-TITcmn-cu89s.usfm"
+ },
+ "门": {
+  "code": "PHM",
+  "name": "腓利门书",
+  "file": "87-PHMcmn-cu89s.usfm"
+ },
+ "来": {
+  "code": "HEB",
+  "name": "希伯来书",
+  "file": "88-HEBcmn-cu89s.usfm"
+ },
+ "雅": {
+  "code": "JAS",
+  "name": "雅各书",
+  "file": "89-JAScmn-cu89s.usfm"
+ },
+ "彼前": {
+  "code": "1PE",
+  "name": "彼得前书",
+  "file": "90-1PEcmn-cu89s.usfm"
+ },
+ "彼后": {
+  "code": "2PE",
+  "name": "彼得后书",
+  "file": "91-2PEcmn-cu89s.usfm"
+ },
+ "约壹": {
+  "code": "1JN",
+  "name": "约翰一书",
+  "file": "92-1JNcmn-cu89s.usfm"
+ },
+ "约贰": {
+  "code": "2JN",
+  "name": "约翰二书",
+  "file": "93-2JNcmn-cu89s.usfm"
+ },
+ "约叁": {
+  "code": "3JN",
+  "name": "约翰三书",
+  "file": "94-3JNcmn-cu89s.usfm"
+ },
+ "犹": {
+  "code": "JUD",
+  "name": "犹大书",
+  "file": "95-JUDcmn-cu89s.usfm"
+ },
+ "启": {
+  "code": "REV",
+  "name": "启示录",
+  "file": "96-REVcmn-cu89s.usfm"
+ }
+}

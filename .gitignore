@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.claude/
+.DS_Store
+手机扫码打开.png
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example

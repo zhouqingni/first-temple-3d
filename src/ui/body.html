@@ -1,0 +1,115 @@
+<div id="app">
+  <div id="stage" aria-label="三维场景"></div>
+  <div id="labels" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 34V16h24v18M5 34h30M12 16V9h16v7M14 34V22h12v12M18 9V5h4v4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="27" r="1.6" fill="currentColor"/></svg>
+      <div>
+        <h1>第一圣殿</h1>
+        <p class="sub">所罗门为耶和华所建的殿 · 依和合本经文复原</p>
+      </div>
+    </div>
+    <nav class="modes" role="tablist" aria-label="浏览方式">
+      <button role="tab" data-mode="orbit" aria-selected="true">俯瞰</button>
+      <button role="tab" data-mode="walk" aria-selected="false">漫步</button>
+      <button role="tab" data-mode="tour" aria-selected="false">导览</button>
+    </nav>
+    <div class="tools">
+      <button id="btn-index" class="tool" aria-label="经文索引" title="经文索引（I）"><svg viewBox="0 0 24 24"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5"/></svg><span>经文索引</span></button>
+      <button id="btn-settings" class="tool" aria-label="设置" title="设置"><svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg><span>设置</span></button>
+      <button id="btn-help" class="tool" aria-label="操作说明" title="操作说明"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17.2v.1"/></svg><span>说明</span></button>
+    </div>
+  </header>
+
+  <div class="quick" role="toolbar" aria-label="视图开关">
+    <button class="chip" data-toggle="roof" aria-pressed="false" title="揭开屋顶（R）">揭顶</button>
+    <button class="chip" data-toggle="dims" aria-pressed="false" title="尺寸标注（D）">尺寸</button>
+    <button class="chip" data-toggle="names" aria-pressed="true" title="地名标注">地名</button>
+    <button class="chip" data-toggle="map" aria-pressed="true" title="平面图（M）">平面图</button>
+    <button class="chip" data-toggle="doors" aria-pressed="true" title="开关殿门">殿门</button>
+    <button class="chip" data-toggle="people" aria-pressed="true" title="显示人物">人物</button>
+  </div>
+
+  <div id="where" class="where" aria-live="polite"></div>
+
+  <aside id="panel" class="sheet" hidden aria-label="经文依据">
+    <button class="close" data-close="panel" aria-label="关闭">×</button>
+    <div class="sheet-body" id="panel-body"></div>
+  </aside>
+
+  <aside id="index" class="sheet" hidden aria-label="经文索引">
+    <button class="close" data-close="index" aria-label="关闭">×</button>
+    <div class="sheet-body">
+      <p class="eyebrow">经文索引</p>
+      <h2>殿里殿外的每一件</h2>
+      <label class="search"><span class="sr">搜索</span><input id="index-q" type="search" placeholder="搜索名称或经文，如 基路伯、王上7"></label>
+      <div id="index-list"></div>
+    </div>
+  </aside>
+
+  <aside id="settings" class="sheet" hidden aria-label="设置">
+    <button class="close" data-close="settings" aria-label="关闭">×</button>
+    <div class="sheet-body">
+      <p class="eyebrow">设置</p>
+      <h2>看法与异读</h2>
+      <fieldset><legend>时段</legend><div class="seg" data-setting="time"><button data-v="morning">清晨</button><button data-v="noon">正午</button><button data-v="dusk">黄昏</button><button data-v="night">夜晚</button></div></fieldset>
+      <fieldset><legend>场景</legend><div class="seg" data-setting="scene"><button data-v="daily">平日献祭</button><button data-v="dedication">献殿之日</button></div>
+        <p class="hint">献殿之日：约柜进殿，云彩充满殿，火从天降（王上8；代下5-7）。</p></fieldset>
+      <fieldset><legend>廊的高度</legend><div class="seg" data-setting="porch"><button data-v="a">一百二十肘</button><button data-v="b">三十肘</button></div>
+        <p class="hint">代下3:4 作"一百二十肘"；列王纪未载，许多复原取与殿同高。</p></fieldset>
+      <fieldset><legend>铜柱高度</legend><div class="seg" data-setting="pillar"><button data-v="a">十八肘</button><button data-v="b">三十五肘</button></div>
+        <p class="hint">王上7:15、耶52:21 作十八肘；代下3:15 作三十五肘。</p></fieldset>
+      <fieldset><legend>一肘的长度</legend><div class="seg" data-setting="cubit"><button data-v="0.525">52.5 厘米</button><button data-v="0.445">44.5 厘米</button></div>
+        <p class="hint">代下3:3"按着古时的尺寸"。改变后人物与米制读数随之换算。</p></fieldset>
+      <fieldset><legend>画质</legend><div class="seg" data-setting="quality"><button data-v="auto">自动</button><button data-v="low">低</button><button data-v="mid">中</button><button data-v="high">高</button></div>
+        <p class="hint">画质改动在重新载入后生效。</p></fieldset>
+      <fieldset><legend>导览</legend><label class="switch"><input type="checkbox" id="set-speech"> 朗读讲解（需浏览器支持中文语音）</label></fieldset>
+      <p class="fine">经文：和合本（神版），取自 eBible.org cmn-cu89s，公有领域。地形按今日耶路撒冷高差概略塑造。</p>
+    </div>
+  </aside>
+
+  <aside id="help" class="sheet" hidden aria-label="操作说明">
+    <button class="close" data-close="help" aria-label="关闭">×</button>
+    <div class="sheet-body">
+      <p class="eyebrow">操作说明</p>
+      <h2>怎样看这座殿</h2>
+      <dl class="keys">
+        <dt>俯瞰</dt><dd>拖动旋转视角，滚轮或双指缩放，右键或双指拖动平移。双击任何东西飞过去。</dd>
+        <dt>漫步</dt><dd>电脑：W A S D 或方向键行走，按住 Shift 快走，拖动鼠标转头。手机：左下摇杆行走，右侧拖动转头。</dd>
+        <dt>查经文</dt><dd>鼠标停在物件上看名称；单击（手机上轻点）打开它的全部经文依据。</dd>
+        <dt>标记</dt><dd><span class="tag t-ming">明载</span> 经文写明　<span class="tag t-tui">推测</span> 经文未载、参考旁证补全　<span class="tag t-yi">异读</span> 经文之间有出入</dd>
+        <dt>快捷键</dt><dd>1 俯瞰　2 漫步　3 导览　R 揭顶　D 尺寸　M 平面图　I 索引　Esc 关闭</dd>
+      </dl>
+    </div>
+  </aside>
+
+  <div id="tip" class="tip" hidden></div>
+  <canvas id="minimap" width="220" height="300" aria-label="平面图，点按可前往"></canvas>
+
+  <div id="tourbar" class="tourbar" hidden>
+    <div class="tour-head"><span id="tour-step" class="step"></span><h3 id="tour-title"></h3></div>
+    <p id="tour-text"></p>
+    <div class="tour-ctrl">
+      <button id="tour-prev" aria-label="上一站">‹ 上一站</button>
+      <button id="tour-play" aria-label="自动播放">自动播放</button>
+      <button id="tour-more">查看经文</button>
+      <button id="tour-next" aria-label="下一站">下一站 ›</button>
+    </div>
+  </div>
+
+  <div id="walkhint" class="walkhint" hidden>W A S D 行走 · 拖动转头 · Shift 快走 · 单击查看经文</div>
+  <div id="joy" class="joy" hidden><div class="knob"></div></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div id="loading" class="loading">
+    <div class="loading-inner">
+      <p class="eyebrow">历代志下 2:5</p>
+      <blockquote>我所要建造的殿宇甚大；因为我们的　神至大，超乎诸神。</blockquote>
+      <div class="bar"><i id="load-bar"></i></div>
+      <p id="load-msg" class="load-msg">正在凿石头……</p>
+      <button id="enter" class="enter" hidden>进入圣殿山</button>
+      <p class="fine">建殿的时候，锤子、斧子和别样铁器的响声都没有听见。（王上6:7）</p>
+    </div>
+  </div>
+</div>
